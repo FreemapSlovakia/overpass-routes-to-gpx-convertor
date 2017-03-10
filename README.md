@@ -4,7 +4,7 @@ Converts routes from Overpass JSON to GPX files, one per route.
 
 ## Running
 
-Obtain Overpass JSON from eg. http://www.overpass-api.de/query_form.html by using a query that return hiking routes. Example:
+Obtain Overpass JSON from eg. http://www.overpass-api.de/query_form.html by using a query that returns routes. Example:
 
 ```
 [out:json][timeout:250];
