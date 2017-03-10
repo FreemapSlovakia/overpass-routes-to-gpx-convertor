@@ -1,0 +1,15 @@
+{
+  "name": "overpass-routes-to-gpx-convertor",
+  "version": "1.0.0",
+  "description": "Converts routes from Overpass JSON to GPX files, one per route.",
+  "main": "index.js",
+  "dependencies": {
+    "xmlbuilder": "^8.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Freemap Slovakia",
+  "license": "ISC"
+}
