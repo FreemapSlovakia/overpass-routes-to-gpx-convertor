@@ -16,7 +16,7 @@ out body;
 out skel qt;
 ```
 
-Download generated json file to this directory and name it `hiking.json`. Afterwards run `npm i && node .` and the resulting GPX files can be fount in the `out` directory.
+Download generated json file to this directory and name it `hiking.json`. Afterwards run `npm i && node .` and the resulting GPX files can be found in the `out` directory.
 
 ## TODO
 
