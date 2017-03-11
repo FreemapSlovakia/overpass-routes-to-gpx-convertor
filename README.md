@@ -13,12 +13,7 @@ Obtain Overpass JSON from eg. http://www.overpass-api.de/query_form.html by usin
 );
 out body;
 >;
-out skel qt;
+out body;
 ```
 
 Download generated json file to this directory and name it `hiking.json`. Afterwards run `npm i && node .` and the resulting GPX files can be found in the `out` directory.
-
-## TODO
-
-* guideposts to GPX
-* route tags to GPX
