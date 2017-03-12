@@ -39,7 +39,7 @@ data.elements.filter(({ type }) => type == 'relation').forEach(function ({ id, m
       });
     } else if (type === 'node') {
       const node = nodes.get(ref);
-      if (node.tags.information === 'guidepost' && /.*kst.*/i.test(node.tags.operator)) {
+      if (node.tags.information === 'guidepost') {
         guideposts.push(node);
       }
     }

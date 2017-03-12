@@ -9,7 +9,7 @@ Obtain Overpass JSON from eg. http://www.overpass-api.de/query_form.html by usin
 ```
 [out:json][timeout:250];
 (
-  relation["operator"~"kst",i]["type"="route"]["route"="hiking"](47.6477590475,16.7596435547,49.6569607868,22.6483154297);
+  relation["operator"~"kst|tanap|napant",i]["type"="route"]["route"="hiking"](47.6477590475,16.7596435547,49.6569607868,22.6483154297);
 );
 out body;
 >;
