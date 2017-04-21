@@ -11,7 +11,7 @@ data.elements.filter(({ type }) => type == 'node').forEach(({ id, lat, lon, tags
 
 data.elements.filter(({ type }) => type == 'relation').forEach(function ({ id, members, tags: { name, description, ref, note, fixme, FIXME, 'osmc:symbol': symbol } = {} }) {
 
-  const gpxEle = builder.create('gpx');
+  const gpxEle = builder.create('gpx', { version: '1.0', encoding: 'UTF-8' });
   gpxEle.att('xmlns', 'http://www.topografix.com/GPX/1/1');
   gpxEle.att('version', '1.1');
 
@@ -53,7 +53,7 @@ data.elements.filter(({ type }) => type == 'relation').forEach(function ({ id, m
   });
 
   const filename  = `./out/${ref || '_'}-${id}.gpx`;
-  fs.writeFile(filename, gpxEle, function (err) {
+  fs.writeFile(filename, gpxEle.end({ pretty: true }), function (err) {
     console.log(`${filename} - ${err ? 'ERROR' : 'OK'}`);
   });
 
